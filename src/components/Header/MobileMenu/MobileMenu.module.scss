@@ -1,0 +1,90 @@
+/* https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background: #029491;
+  overflow: hidden;
+}
+
+/* Position the content inside the overlay */
+.overlayContent {
+  margin-top: 120px;
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+  color: #FFF;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  text-decoration: none;
+  padding-bottom: 25px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 60px;
+}
+
+.authBlock{
+  margin: 0 auto;
+  padding-top: 75px;
+  .register{
+    color: #FFF;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    opacity: 0.4;
+  }
+  .login{
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #7CE3E1;
+    width: 295px;
+    height: 51.955px;
+    line-height: 51.955px;
+    flex-shrink: 0;
+    color: #000;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+  }
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

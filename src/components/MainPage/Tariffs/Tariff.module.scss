@@ -1,0 +1,194 @@
+.tariffs {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  justify-content: space-between;
+  margin-bottom: 118px;
+}
+
+.tariff {
+  width: 415px;
+  height: 540px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.header {
+  position: relative;
+  padding: 30px;
+  text-align: left;
+  height: 132px;
+  box-sizing: border-box;
+
+  .title {
+    color: #FFF;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  .sublitle {
+    padding-top: 10px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Inter;
+    letter-spacing: 0.18px;
+  }
+
+  .icon {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    width: 105px;
+    height: 128px;
+  }
+}
+
+.header.black {
+  background-color: black;
+}
+
+.header.green {
+  background-color: #7CE3E1;
+}
+
+.header.yellow {
+  background-color: #FFB64F;
+}
+
+.content {
+  padding: 30px 33px 55px 24px;
+  box-sizing: border-box;
+
+  .wrap {
+    min-height: 127px;
+  }
+
+  .priceBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .price {
+      color: #000;
+      font-size: 30px;
+      font-family: Inter;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      padding-right: 19px;
+    }
+
+    .sale {
+      color: #000;
+      font-size: 25px;
+      font-family: Inter;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      text-decoration-line: line-through;
+      opacity: 50%;
+    }
+  }
+
+  .text {
+    color: #000;
+    font-size: 18px;
+    font-family: Inter;
+    padding-top: 10px;
+    padding-bottom: 59px;
+    letter-spacing: -0.5px;
+    text-align: left;
+  }
+
+  .list {
+    padding-bottom: 55px;
+    .listTitle {
+      text-align: left;
+      color: #000;
+      font-size: 20px;
+      font-family: Inter;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      padding-bottom: 10px;
+    }
+
+    .option {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 8px;
+
+      .optionIcon {
+        background: url('img/galka.svg') no-repeat;
+        width: 20px;
+        height: 20px;
+      }
+
+      .optionText {
+        color: #000;
+        font-size: 18px;
+        font-family: Inter;
+        letter-spacing: 0.18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .tariff {
+    width: 335px;
+    height: auto
+  }
+  .content{
+    padding: 20px 24px 31px 20px;
+
+  .header {
+    .title {
+      font-size: 20px;
+    }
+    .sublitle{
+      padding-top: 22px;
+      padding-bottom: 4px;
+    }
+
+    .icon {
+      width: 75px;
+      height: 98px;
+    }
+  }
+  .wrap {
+    padding-bottom: 39px;
+    min-height: 86px;
+  }
+  .text {
+    padding-bottom: 0;
+  }
+  .list {
+    padding-bottom: 39px;
+    .listTitle {
+      font-size: 18px;
+      letter-spacing: 0.18px;
+    }
+
+    .option {
+      gap: 5px;
+      min-width: 300px;
+      .optionText {
+        font-size: 16px;
+        letter-spacing: -0.16px;
+      }
+    }
+  }
+  }
+}
+
+@media (max-width: 1200px) {
+  .tariffs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrap{
+    min-height: auto !important;
+  }
+}

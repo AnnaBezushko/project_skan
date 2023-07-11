@@ -1,0 +1,29 @@
+.wrapperArrows {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.wrapperSlider {
+  width: 1290px;
+  //padding: 15px;
+}
+
+@media (max-width: 1439px) {
+  .wrapperSlider {
+    width: 985px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .wrapperSlider {
+    width: 655px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapperSlider {
+    width: 325px;
+  }
+}

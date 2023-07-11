@@ -1,0 +1,38 @@
+.arrow {
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+}
+
+.left {
+  margin-left: -25px;
+}
+
+.right {
+}
+
+@media (max-width: 900px) {
+  .left {
+    margin: 0
+  }
+
+  .right {
+    margin: 0
+  }
+}
+
+@media (max-width: 450px) {
+  .arrow{
+    position: absolute;
+    display: none;
+  }
+  .left {
+    margin-right: -32px;
+    left: 0
+  }
+
+  .right {
+    margin-right: -32px;
+    right: 0;
+  }
+}

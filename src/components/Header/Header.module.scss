@@ -1,0 +1,183 @@
+.header{
+  align-items: center;
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.logo{
+  width: 111px;
+  height: 111px;
+  position: relative;
+  top: -5px;
+}
+
+.menu{
+ display: flex;
+  flex-direction: row;
+  gap: 49px;
+}
+
+.menuItem{
+  color: #000;
+  font-size: 14px;
+  font-family: Inter;
+  letter-spacing: 0.14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.authBlock{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.register{
+  color: #000;
+  font-size: 14px;
+  font-family: Inter;
+  letter-spacing: 0.14px;
+  opacity: 0.4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.break{
+  width: 2px;
+  height: 26px;
+  flex-shrink: 0;
+  opacity: 0.6000000238418579;
+  background: #029491;
+}
+
+.login{
+  width: 65px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #7CE3E1;
+  padding: 4px 10px 5px 12px;
+  color: #000;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+  line-height: 26px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.userBlockWrap{
+  display: flex;
+  gap: 128px;
+  align-items: center;
+}
+
+.userInfo{
+  border-radius: 5px;
+  width: 175px;
+  height: 63px;
+  flex-shrink: 0;
+  background: url("./img/preloader.svg") no-repeat center center, #1111;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.userInfo.active{
+  background-image: none;
+}
+
+.userInfoText{
+  color: #000;
+  font-size: 10px;
+  font-family: Inter;
+}
+
+.compCount{
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 9px;
+}
+
+.compLimitCount{
+  color: #8AC540;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 700;
+  opacity: 1;
+  padding-left: 9px;
+}
+.userBlock{
+  display: flex;
+}
+.avatar{
+  width: 32px;
+  height: 32px;
+}
+.userBlockInfo{
+  text-align: right;
+  padding-right: 3px;
+}
+.userName{
+  color: #000;
+  font-size: 14px;
+  font-family: Inter;
+  letter-spacing: 0.28px;
+  opacity: 0.6;
+}
+
+.exit{
+  color: #000;
+  font-size: 10px;
+  font-family: Inter;
+  letter-spacing: 0.2px;
+  opacity: 0.4;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.mobileMenu{
+  width: 30px;
+  height: 25px;
+  background: url("./img/menuMobile.svg") no-repeat;
+  display: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 975px) {
+  .authBlock{display: none}
+  .userBlock{ display: none}
+  .mobileMenu{display: block}
+  .userInfoText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .userInfo{
+    width: 135px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 5px;
+  }
+  .menu{
+    display: none;}
+  .header{
+    padding: 0 15px;
+  }
+
+}

@@ -1,0 +1,36 @@
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 137px;
+  padding: 0 45px 0 60px;
+  background: #029491;
+}
+
+.logo{
+  width: 111px;
+  height: 111px;
+  position: relative;
+  top: -5px;
+}
+
+.info{
+ text-align: right;
+  color: #FFFFFF;
+  text-align: right;
+  font-size: 14px;
+  font-family: Inter;
+  letter-spacing: 0.14px;
+}
+
+.copy{
+  padding-top: 21px;
+}
+
+
+@media (max-width: 900px) {
+  .footer{
+    padding: 0 24px 0 24px
+  }
+}

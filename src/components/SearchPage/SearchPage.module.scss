@@ -1,0 +1,166 @@
+.page{
+  background: url("./img/bg.svg") right bottom 70px no-repeat;
+  padding-bottom: 64px;
+  padding-left: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.document{
+  background: url("./img/Document.svg") no-repeat;
+  width: 91px;
+  height: 112px;
+  position: absolute;
+  top: 130px;
+  left: 915px;
+}
+
+.folders{
+  background: url("./img/Folders.svg") no-repeat;
+  width: 141px;
+  height: 69px;
+  position: absolute;
+  top: 130px;
+  left: 1150px;
+}
+
+.title{
+  color: #000;
+  font-size: 40px;
+  font-family: Ferry;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  max-width: 800px;
+  padding-top: 69px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.subtitle{
+  color: #000;
+  font-size: 20px;
+  font-family: Inter;
+  letter-spacing: 0.4px;
+  padding-bottom: 47px;
+  max-width: 500px;
+  text-align: left;
+}
+.form{
+  display: flex;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+  width: 872px;
+  height: 543px;
+  flex-shrink: 0;
+  border-bottom: 64px;
+  padding: 29px 0 0 44px;
+  box-sizing: border-box;
+}
+
+.label{
+  color: #000;
+  font-size: 18px;
+  font-family: Inter;
+  letter-spacing: 0.54px;
+}
+
+.labelIcon{
+  color: #000;
+  font-size: 25px;
+  font-family: Inter;
+  letter-spacing: 0.75px;
+}
+.errorIcon{
+  color: #FF5959;
+}
+
+.block{
+  text-align: left;
+  flex-basis: 50%;
+}
+.shortInputs{
+  max-width: 242px;
+  padding-bottom: 39px;
+}
+
+.diapazon{
+  display: flex;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.diapazon > *{
+  min-width: 176px;
+}
+
+.input::placeholder{
+  text-align: center;
+  color: #949494;
+  font-size: 14px;
+  font-family: Inter;
+  letter-spacing: 0.42px;
+  opacity: 0.4;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .folders{
+    display: none;
+  }
+  .document{
+    display: none;
+  }
+}
+@media (max-width: 975px) {
+  .page{
+    padding: 0 0 400px 0;
+    background: url("./img/bg.svg") center bottom 20px no-repeat;
+    align-items: center;
+    background-size: 330px;
+  }
+  .title{
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.28px;
+    text-align: center;
+  }
+  .subtitle{
+    color: #000;
+    font-size: 18px;
+    font-family: Inter;
+  }
+  .form{
+    width: 375px;
+    height: 688px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    flex-direction: column;
+    gap: 40px;
+    padding: 24px 14px;
+  }
+  .label{
+    letter-spacing: 0.36px;
+  }
+  .labelIcon{
+    letter-spacing: 0.75px;
+  }
+
+  .filtersBlock div, .filtersBlock label, .filtersBlock input{
+    display: none;
+  }
+
+  .diapazon{
+    flex-direction: column;
+  }
+  .shortInputs{
+    max-width: none;
+  }
+}

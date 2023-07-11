@@ -1,0 +1,31 @@
+.label{
+  color: #000;
+  font-size: 18px;
+  font-family: Inter;
+  letter-spacing: 0.54px;
+  cursor: pointer;
+  opacity: 0.4;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.checked{
+  opacity: 1;
+}
+.arrow{
+  width: 20px;
+  height: 20px;
+  background: url("./img/arrow.svg") no-repeat;
+  display: inline-block;
+  margin-right: 17px;
+  position: relative;
+  top: 3px;
+}
+
+.arrowChecked{
+  width: 20px;
+  height: 20px;
+  background: url("./img/checkGreen.svg") no-repeat center;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}

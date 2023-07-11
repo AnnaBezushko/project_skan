@@ -1,0 +1,48 @@
+.button{
+  max-width: 335px;
+  width: 100%;
+  height: 59px;
+  border-radius: 5px;
+  background: #5970FF;
+  border: none;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.button.small{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button.grey{
+  background: #D2D2D2;
+  color: #000000;
+}
+
+.button.skyBlue{
+  background: #5970FF;
+}
+
+.button:disabled{
+  opacity: 50%;
+}
+
+.button:hover:not([disabled]){
+  cursor: pointer;
+}
+
+@media (max-width: 1160px) {
+  .button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
